@@ -1,0 +1,54 @@
+.divv{
+    width: 100%;
+    
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.div2 {
+    
+    background-color: rgba(182, 53, 53, 0.459);
+    width: 33%;
+    float:left;
+    padding: 2px;
+height: 100%;
+
+}
+.div1{
+    width: 33%;
+    background-color: blueviolet;
+    float:left;
+    margin:  auto;
+    height: 100%;
+
+
+
+}
+.div3{
+    width: 33%;
+    float:left;
+    background-color: aquamarine;
+    margin: auto;
+    height: 100%;
+
+
+
+}
+.footer1{
+    width : 100%;
+    float:left;
+    color: antiquewhite;
+    background-color: black;
+}
+@media screen and (max-width: 720px) {
+    .div1 {width: 45%;}
+    .div2 {width: 45%;}
+    .div3 {width: 100%;}
+  }
+  @media screen and (max-width: 480px) {
+    .div1 {width: 100%;}
+    .div2 {width: 100%;}
+    .div2 {width: 100%;}
+
+  }
