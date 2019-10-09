@@ -1,54 +1,90 @@
-.divv{
+* {
+    box-sizing: border-box;
+  }
+  html{
+    font-family: 'Roboto', sans-serif;
+  }
+  h1{
+    
+    font-size: 45px;
+    text-align: center;
+    color: rgb(208, 240, 29);
+    
+  }
+  body{
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(150, 149, 149));  
+}
+.flex-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+  }
+  .flex-container > div {
+    border-radius: 15px 15px 15px 15px;
+    background-color: #f1f1f1;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+    box-shadow: 10px 10px 5px rgb(24, 23, 23);
+}
+.immagine {
+    border-radius: 15px 15px 15px 15px;
+    display: block;
     width: 100%;
-    
-}
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-}
-.div2 {
-    
-    background-color: rgba(182, 53, 53, 0.459);
-    width: 33%;
-    float:left;
-    padding: 2px;
-height: 100%;
-
-}
-.div1{
-    width: 33%;
-    background-color: blueviolet;
-    float:left;
-    margin:  auto;
     height: 100%;
-
-
-
+    transition: all 0.5s linear;
 }
-.div3{
-    width: 33%;
-    float:left;
-    background-color: aquamarine;
+fieldset {
+	border-radius: 3px;
+    border: 1px solid rgb(208, 240, 29);
+    
+   
+}
+legend {
+	font-size: 1.3em;
+	padding: 3px 6px;
+	color: black;
+	margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: rgb(208, 240, 29);
+    text-align: center;
+}
+
+        
+
+fieldset  div{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.fieldcontainer{
+    width: 30%;
     margin: auto;
-    height: 100%;
-
-
-
 }
-.footer1{
-    width : 100%;
-    float:left;
-    color: antiquewhite;
-    background-color: black;
-}
-@media screen and (max-width: 720px) {
-    .div1 {width: 45%;}
-    .div2 {width: 45%;}
-    .div3 {width: 100%;}
-  }
-  @media screen and (max-width: 480px) {
-    .div1 {width: 100%;}
-    .div2 {width: 100%;}
-    .div2 {width: 100%;}
 
-  }
+
+img.immagine:hover {
+    width: 105%;
+    height: 105%;
+}
+@media (max-width: 800px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex-container > div{
+        width: 50%;
+    }
+}
+#flexvideo{
+    display: flex; 
+    justify-content: center;
+    margin-top: 70px;
+}
+#video{
+}
